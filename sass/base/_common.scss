@@ -1,18 +1,3 @@
-:root {
-  --main-color: #2196f3;
-  --secondary-color: white;
-  --third-color: #757575;
-  --fourth-color: #ffffff;
-  --fifth-color: #212121;
-  --sixth-color: #f5f4fa;
-  --seventh-color: #2f303a;
-  --eighth-color: #e5e5e5;
-  --nineth-color: #000000;
-  --tenth-color: black;
-  --border-color: #eeeeee;
-  --headerborder-color: #ececec;
-}
-
 ul {
   list-style-type: none;
   padding: 0;
@@ -20,7 +5,7 @@ ul {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-roboto);
   color: var(--fifth-color);
   letter-spacing: 0.03em;
   font-size: 14px;
@@ -41,11 +26,23 @@ img {
   height: auto;
 }
 
-.studioname {
-  color: var(--main-color);
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+.option {
+  position: relative;
+  display: flex;
+  gap: 7px;
+  justify-content: center;
 }
-
+.portoflio {
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.02em;
+}
+.backround-ourteam {
+  background-color: #f5f4fa;
+}
+.our-customers {
+  text-align: center;
+  font-weight: 700;
+}
