@@ -166,7 +166,7 @@ img {
 /* END HEADER */
 
 /* START MAIN */
-.main__background {
+.hero {
   background: var(--seventh-color);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -177,9 +177,12 @@ img {
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
 }
 
-.main__background-text {
+.hero__text {
   font-size: 44px;
   color: var(--secondary-color);
   line-height: 1.36;
@@ -189,7 +192,7 @@ img {
   margin: 0 auto;
   margin-bottom: 30px;
 }
-.main__button {
+.hero__button {
   background-color: var(--main-color);
   font-size: 16px;
   font-weight: 700;
@@ -230,7 +233,7 @@ img {
   display: flex;
   gap: 30px;
 }
-.loremipsum__backround {
+.loremipsum__image {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -253,18 +256,19 @@ img {
   margin-right: 0;
 }
 
-.loremipsum__description-text {
+.loremipsum__description {
   line-height: 1.71;
   color: var(--third-color);
 }
-/* IN COMMON
-.headtwo {
+/* IN COMMON */
+
+.text__h2 {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
-} */
+}
 
 .customer {
   display: flex;
@@ -284,7 +288,7 @@ img {
   gap: 30px;
 }
 
-.team__list {
+.team__item {
   background-color: var(--fourth-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -358,14 +362,14 @@ img {
   color: var(--main-color);
 }
 
-.project__border-text {
+.project__title {
   color: var(--fifth-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   padding-bottom: 4px;
 }
-.project__border-description {
+.project__description {
   color: var(--third-color);
 
   font-size: 16px;
@@ -393,11 +397,11 @@ img {
   color: var(--main-color);
 }
 
-.buttons {
+/* .buttons {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-}
+} */
 
 .margin-customers {
   margin-right: 30px;
@@ -406,29 +410,23 @@ img {
   margin-right: 0;
 }
 
-.main__text-position {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
-}
-
-.buttons__portfolio {
+.buttons {
   justify-content: center;
   margin-bottom: 50px;
   display: flex;
 }
-.buttons__list:not(:last-child) {
+.buttons__item:not(:last-child) {
   margin-right: 8px;
 }
-.buttons__list :last-child {
+.buttons__item :last-child {
   margin-right: 0;
 }
 
-.project__active {
+.project__img {
   position: relative;
   overflow: hidden;
 }
-.project__animation {
+.project__hover-text {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -436,19 +434,24 @@ img {
   background: rgba(33, 150, 243, 0.9);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 49px 45px 49px 29px;
-}
-.project__link:hover .project__animation,
-.project__link:focus .project__animation {
-  transform: translateY(0%);
-}
-
-.project__animation-text {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   color: #ffffff;
   letter-spacing: 0.03em;
 }
+.project__link:hover .project__hover-text,
+.project__link:focus .project__hover-text {
+  transform: translateY(0%);
+}
+
+/* .project__animation-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+} */
 
 .project__link {
   display: block;
@@ -461,7 +464,7 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.project__border {
+.project__content {
   border: 1px solid var(--border-color);
   padding: 20px 24px;
 }
@@ -509,7 +512,7 @@ img {
 
 /* FOOTER START */
 
-.footer__background {
+.footer {
   background: var(--seventh-color);
   padding: 60px 0;
 }
